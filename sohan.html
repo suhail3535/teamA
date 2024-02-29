@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Top_section{
+            width:85%;
+            margin: auto;
+        }
+         .marq{
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-name: detailsheading;
+            animation-timing-function: linear;
+            background: linear-gradient(90deg, #39f, #93f, #60c);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            position: absolute;
+            margin-top:15px;
+            width:28%;
+            margin-left:250px;
+            margin-right: 250px;
+            font-size:40px;
+            font-weight: 600;
+        }
+        @keyframes  detailsheading{
+            0%   { left:0px; top:0px;}
+  100%  {left:35%; top:0px;}
+            
+        }
+       .Top_section img{
+            width:90%;
+            height:500px;
+            margin-top: 20px;
+        } 
+        @media  screen and (min-width:10px) and (max-width:420px) {
+         .marq{
+            animation-duration: 5s;
+            margin-top:10px;
+            width:60%;
+            margin-left:30px;
+            font-size:18px;
+            font-weight: 700;
+        }
+        @keyframes  detailsheading{
+            0%   { left:0px; top:0px;}
+  100%  {left:30%; top:0px;}
+            
+        }
+       .Top_section img{
+            width: 100%;
+            height:180px;
+            margin-top: 8px;
+        } 
+        }
+        @media  screen and (min-width:421px) and (max-width:1024px) {
+         .marq{
+            animation-duration: 5s;
+            margin-top:10px;
+            width:60%;
+            margin-left:50px;
+            font-size:30px;
+            font-weight: 700;
+        }
+        @keyframes  detailsheading{
+            0%   { left:0px; top:0px;}
+  100%  {left:30%; top:0px;}
+            
+        }
+       .Top_section img{
+            width: 100%;
+            height:300px;
+            margin-top: 13px;
+        } 
+        }
+    </style>
+</head>
+<body>
+    <div class="Top_section">
+    <div class="marq">Welcome To Ride Advertise</div>
+    <img src="./Images/carsh.jpg" alt="carsh">
+   
+</div>
+</body>
+</html>
