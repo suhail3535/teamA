@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .PhotoGallery{
+        margin: auto;
+        text-align: center;
+
+       }
+       .carimg{
+         margin: auto;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(3,1fr);
+
+       }
+       .carimg div{
+        overflow: hidden;
+        /* border: 1px solid blue; */
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        border-radius: 10px;
+        height: 350px;
+       
+       }
+
+       .carimg div img{
+        width: 100%;
+        height: 350px;
+        transition:  all ease-in-out 1s;
+        /* border-radius: 10px; */
+       
+        
+       }
+       .carimg div img:hover{
+        transform: scale(1.07);
+        overflow: hidden;
+       cursor: pointer;
+       
+       }
+       @media screen and (min-width:200px) and (max-width:420px) {
+        .carimg{
+         margin: auto;
+        display: flex;
+        flex-direction: column;
+
+        
+       }
+       
+    }
+       @media screen and (min-width:421px) and (max-width:768px) {
+        .carimg{
+         margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        }
+        #nineimage{
+            grid-column-start: 1;
+            grid-column-end: 3;
+     
+        }
+
+       
+
+
+    }
+        
+    
+    
+    </style>
+
+
+</head>
+<body>
+    <div class="PhotoGallery">
+        <h1>Photos Gallery</h1>
+        <div class="carimg">
+
+                 <div><img src="./Images/suzuki.jpg"></div>
+                 <div><img src="./Images/sports.jpg"></div>
+                 <div><img src="./Images/swfit.jpg"></div>
+                 <div><img src="./Images/punch.jpg"></div>
+                 <div><img src="./Images/sports.jpg"></div>
+                 <div><img src="./Images/punch.jpg"></div>
+                 <div><img src="./Images/suzuki.jpg"></div>
+                 <div><img src="./Images/punch.jpg"></div>
+                 <div id="nineimage"><img src="./Images/sports.jpg"></div>
+        </div>
+    </div> 
+</body>
+</html>
