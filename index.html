@@ -441,11 +441,186 @@ width: 99%;
             grid-column-end: 3;
 
         }
-
-
-
-
     }
+
+    /* -----------------------Koli ji------------------------- */
+
+    .one {
+            /* border: 1px solid red; */
+            width: 20%;
+            height: 210px;
+        }
+
+        h3 {
+            color: rgb(98, 98, 233)
+        }
+
+        .first {
+            /* border: 01px solid green; */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 90%;
+        }
+
+        .first img {
+            width: 10%;
+            height: 10%;
+            /* padding-top: 10%; */
+        }
+
+        .second {
+            /* border: 01px solid green; */
+            display: flex;
+            justify-content: space-evenly;
+            height: 15%;
+            width: 90%;
+
+        }
+
+        .second img {
+            width: 10%;
+            height: auto;
+
+            border-radius: 50%;
+        }
+
+        ul {
+            list-style: none;
+            line-height: 180%;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 20px;
+            align-items: center;
+            font-family: Courier, monospace;
+            background-color: rgb(231, 235, 237);
+        }
+
+        footer div {
+            /* border: 1px solid blue; */
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        button img {
+            width: 50%;
+        }
+
+       footer button {
+            width: 20%;
+            height: 90%;
+            border-radius: 5px;
+            border: none;
+            background-color: aliceblue;
+        }
+
+        input {
+            height: 90%;
+            border-radius: 5px;
+            width: 50%;
+            border: none;
+            background-color: rgb(210, 205, 205);
+        }
+
+        .mail {
+            display: flex;
+            gap: 10px;
+            height: 20%;
+        }
+
+        .four {
+            /* border: 1px solid; */
+            height: 210px;
+            width: 30%;
+        }
+
+        .two,
+        .three,
+        .four {
+            text-align: left;
+        }
+
+        .two h3,
+        .three h3 {
+            color: rgb(66, 61, 61);
+            text-align: center;
+        }
+
+        .four h3 {
+            color: rgb(66, 61, 61);
+        }
+
+        @media screen and (min-width:50px) and (max-width:750px) {
+
+        footer {
+            display: block;
+            flex-direction: column;
+            background-color: rgb(227, 241, 241);
+        }
+
+        .one,
+        .two,
+        .three,
+        .four {
+            width: 100%;
+            border-radius: 20px;
+            background-color: rgb(234, 236, 244);
+        }
+
+        .two,
+        .three,
+        .four {
+            text-align: left;
+        }
+
+        .mail {
+            display: block;
+        } }
+
+        @media screen and (min-width:751px) and (max-width:1020px) {
+
+        footer {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
+            background-color: #2196F3;
+            padding: 20px;
+            background-color: rgb(227, 241, 241);
+            margin: 40px;
+        }
+
+        .one {
+            grid-column-end: span 3;
+        }
+
+        .four {
+            grid-column-end: span 3;
+
+        }
+        .one, .two,.three, .four {
+            width: 100%;
+            border-radius: 20px;
+            background-color: rgb(234, 236, 244);
+        }
+
+        .two,
+        .three,
+        .four {
+            text-align: left;
+        }
+        .two,
+        .three
+         {
+            border :1px solid rgb(219, 216, 216);
+            text-align: left;
+            margin-left: 70px;
+        }
+        .mail {
+           margin-left:120px ;
+        } }
 
 
     </style>
@@ -634,5 +809,51 @@ width: 99%;
                  <div id="nineimage"><img src="./Images/sports.jpg"></div>
         </div>
     </div>
+<!-- ----------------------------Koli ji------------------------ -->
+  <footer>
+
+      <div class="one">
+          <div class="first"><img src="./Images/wol.png">
+              <h3>Ride Advertise</h3>
+          </div>
+
+          <p>2003 Ride Advertise. All rights reserved</p>
+          <div class="second"><img src="./Images/twit.png">
+              <img src="./Images/y.png">
+              <img src="./Images/inst.jpg">
+          </div>
+
+      </div>
+      <div class="two">
+          <h3>Company</h3>
+          <ul>
+              <li>About us</li>
+              <li>Blog</li>
+              <li>Contact us</li>
+              <li>pricing</li>
+              <li>Testimonials</li>
+          </ul>
+      </div>
+      <div class="three">
+          <h3>Support</h3>
+          <ul>
+              <li>Help Center</li>
+              <li>Terms of Service</li>
+              <li>Legal</li>
+              <li>privacy</li>
+              <li>Status</li>
+          </ul>
+      </div>
+      <div class="four">
+          <h3>Stay up to date</h3>
+          <div class="mail">
+              <input type="email" placeholder="your email adress">
+              <button><img src="./Images/gmail.png"></button>
+          </div>
+      </div>
+
+  </footer>
+
+
   </body>
 </html>
