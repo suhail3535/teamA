@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            /* font-weight: bold; */
+        }
+
+        .contact_us_section {
+            /* border: 2px solid blue; */
+            width: 100%;
+            display: flex;
+            margin: 20px auto;
+
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #808080;
+        }
+
+        form {
+            color: #1A202C;
+            font-size: 16px;
+            /* padding: 16px 0; */
+
+        }
+
+        .contact_us_form {
+            /* border: 2px solid grey; */
+            width: 50%;
+            padding: 40px;
+
+        }
+
+        .contact_us_img {
+            /* border: 2px solid lawngreen; */
+            width: 40%;
+            text-align: center;
+            margin: 100px auto;
+            padding: 20px;
+            overflow: hidden;
+
+        }
+
+        .contact_us_img img {
+
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: rgba(227, 220, 220, 0.81) 0px 5px 15px;
+            transition: all ease-in-out 1s;
+
+        }
+
+        .contact_us_img img:hover {
+            transform: scale(1.06);
+
+        }
+
+
+        label {
+            color: #808080;
+            font-weight: 600;
+
+        }
+
+        input {
+            background-color: #ffffff;
+            width: 60%;
+            /* height: 40px; */
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #474343;
+            margin: 10px 0px;
+            font-family: sans-serif;
+            font-weight: 600;
+            opacity: 50%;
+
+
+        }
+
+
+        textarea {
+            width: 60%;
+            margin: 10px 0px;
+            border-radius: 5px;
+            /* padding: 10px; */
+            /* padding: 10px 70px 10px 10px; */
+            padding: 10px;
+            font-weight: 600;
+            font-family: sans-serif;
+            color: #808080;
+            opacity: 50%;
+
+
+        }
+
+        button {
+            color: #ffffff;
+            background-color: #0080ff;
+            background-image: linear-gradient(#64a1e6, #9097e4);
+            margin: 10px auto;
+            padding: 10px;
+            width: 25%;
+            font-weight: bold;
+            font-size: large;
+            border-radius: 5px;
+
+        }
+
+        button:hover {
+            background: #ffffff;
+            color: #0080ff;
+            border-radius: 5px;
+        }
+
+        button:active {
+            box-shadow: 2px 2px 5px #020934;
+
+
+        }
+
+
+        /* .........media query for mobile..........  */
+
+        @media screen and (min-width: 220px)and (max-width: 420px) {
+            .contact_us_section {
+                /* border: 2px solid blue; */
+                display: block;
+                width: 100%;
+                margin: 20px auto;
+
+            }
+
+            h2 {
+                text-align: center;
+            }
+
+            .contact_us_form {
+                /* border: 2px solid grey;             */
+                padding: 10px;
+                width: 90%;
+                margin: 10px auto;
+
+            }
+
+            .contact_us_img {
+                /* border: 2px solid lawngreen; */
+                width: 90%;
+                margin: auto;
+                overflow: hidden;
+                padding: 0px;
+            }
+
+            /* .contact_us_img img {
+
+                width: 77%;
+
+            } */
+
+            input {
+                background-color: #ffffff;
+                width: 77%;
+                margin: 10px 0px;
+
+            }
+
+            textarea {
+                width: 77%;
+
+
+
+            }
+
+            .btn {
+                text-align: center;
+
+            }
+
+            button {
+                width: 40%;
+                padding: 15px;
+            }
+        }
+
+
+        /* ......... media query for tablet ...........  */
+
+        @media screen and (min-width: 421px)and (max-width: 768px) {
+            .contact_us_section {
+                /* border: 2px solid blue; */
+                display: block;
+                /* margin: 20px auto;          */
+
+            }
+
+            h2 {
+                text-align: center;
+                font-size: 26px;
+                font-weight: 900;
+            }
+
+            .contact_us_form {
+                /* border: 2px solid grey;  */
+                padding: 20px;
+                width: 80%;
+                margin: 1px auto
+            }
+
+            .contact_us_img {
+                /* border: 2px solid lawngreen; */
+                width: 80%;
+                margin: auto;
+                /* overflow: hidden; */
+                /* padding: 0px; */
+            }
+
+            /* .contact_us_img img {
+                width: 90%;
+            } */
+
+            input {
+                /* background-color: #ffffff; */
+                width: 90%;
+
+
+            }
+
+            textarea {
+                width: 90%;
+
+
+
+            }
+
+            .btn {
+                text-align: center;
+
+            }
+
+            button {
+                width: 40%;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contact_us_section">
+        <div class="contact_us_img">
+            <img src="/teamA/Images/form.png" alt="contact us">
+        </div>
+
+
+        <div class="contact_us_form">
+            <h2>Contact Us</h2>
+            <form>
+                <div>
+                    <label for="name">Name-</label>
+                    <br>
+                    <input type="text" placeholder="Enter your Name" required>
+                </div>
+
+
+
+                <div>
+                    <label for="mobile">Mobile-</label>
+                    <br>
+                    <input type="text" placeholder="Enter your Mobile" required>
+
+                </div>
+
+                <div>
+                    <label for="email">Email-</label>
+                    <br>
+                    <input type="email" placeholder="Enter your Email here" required>
+                </div>
+
+                <div>
+                    <label for="">Query-</label>
+                    <br>
+                    <textarea name="text_area" cols="50" rows="10">Type your Query</textarea>
+                </div>
+
+            </form>
+
+            <div class="btn">
+                <button>Submit</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
