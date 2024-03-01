@@ -141,12 +141,9 @@
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         position: absolute;
-        margin-top: 15px;
-        width: 28%;
-        margin-left: 250px;
-        margin-right: 250px;
+        margin-top:80px;
         font-size: 40px;
-        font-weight: 600;
+        font-weight: bold;
       }
       @keyframes detailsheading {
         0% {
@@ -154,21 +151,19 @@
           top: 0px;
         }
         100% {
-          left: 35%;
+          left: 40%;
           top: 0px;
         }
       }
       .Top_section img {
-        width: 90%;
+        width: 100%;
         height: 500px;
         margin-top: 20px;
       }
       @media screen and (min-width: 10px) and (max-width: 420px) {
         .marq {
           animation-duration: 5s;
-          margin-top: 10px;
-          width: 60%;
-          margin-left: 30px;
+          margin-top: 60px;
           font-size: 18px;
           font-weight: 700;
         }
@@ -178,7 +173,7 @@
             top: 0px;
           }
           100% {
-            left: 30%;
+            left: 40%;
             top: 0px;
           }
         }
@@ -192,9 +187,8 @@
         .marq {
           animation-duration: 5s;
           margin-top: 10px;
-          width: 60%;
-          margin-left: 50px;
-          font-size: 30px;
+          margin-top: 80px;
+          font-size: 22px;
           font-weight: 700;
         }
         @keyframes detailsheading {
@@ -231,9 +225,9 @@
         width: 98%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 30px;
-        margin: auto;
-        padding: 20px;
+        gap: 25px;
+         margin: auto;
+         /* padding: 10px;  */
         line-height: 0.2;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         font-weight: 500;
@@ -242,7 +236,7 @@
       }
       .Available_cars div {
         /* border: 1px solid #7e7b7b; */
-        width: 95%;
+        width: 98%;
         padding: 10px;
         box-shadow: rgba(22, 22, 22, 0.356) 0px 3px 8px;
         border-radius: 10px;
@@ -251,7 +245,7 @@
 
       .Available_cars div:hover {
         cursor: pointer;
-        transform: scale(1.07);
+        transform: scale(1.04);
       }
       .Available_cars img {
         width: 100%;
@@ -261,7 +255,7 @@
       }
       .Available_cars img:hover {
         cursor: pointer;
-        transform: scale(1.04);
+        transform: scale(1.02);
       }
       .Available_cars button {
         padding: 7px;
@@ -393,12 +387,13 @@
        .PhotoGallery{
         margin: auto;
         text-align: center;
-
+width: 99%;
        }
        .carimg{
          margin: auto;
         display: grid;
         gap: 20px;
+
         grid-template-columns: repeat(3,1fr);
 
        }
@@ -407,7 +402,7 @@
         /* border: 1px solid blue; */
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         border-radius: 10px;
-        height: 350px;
+        height: 300px;
 
        }
 
@@ -453,9 +448,6 @@
     }
 
 
-
-
-
     </style>
   </head>
   <body>
@@ -465,10 +457,10 @@
       </div>
       <div class="div_ul">
         <ul>
-          <li><a href="">Home</a></li>
+          <li><a href="./index.html">Home</a></li>
           <li><a href="#section">View Adds</a></li>
-          <li><a href="">Create Add</a></li>
-          <li><a href="">Gallery</a></li>
+          <li><a href="./login.html">Create Add</a></li>
+          <li><a href="#PhotoGallery">Gallery</a></li>
           <li><a href="">Contact</a></li>
         </ul>
       </div>
@@ -482,10 +474,10 @@
       <div class="menu_bar">
         <span class="span_btn">&#9776;</span>
         <div class="dropdown-content">
-          <a href="#">Home</a>
-          <a href="#">View Adds </a>
-          <a href="#">Create Add</a>
-          <a href="#">Gallery</a>
+          <a href="./index.html">Home</a>
+          <a href="#section">View Adds </a>
+          <a href="./login.html">Create Add</a>
+          <a href="#PhotoGallery">Gallery</a>
           <a href="#">Contact</a>
         </div>
       </div>
@@ -497,7 +489,7 @@
       <img src="./Images/carsh.jpg" alt="carsh" />
     </div>
     <!-- <----------sureshch section--------->
-        <div class="Main_container_Available_cars">
+         <div class="Main_container_Available_cars" id="section">
 
         <h1> All Available cars</h1>
 
@@ -624,10 +616,10 @@
             </div>
 
         </div>
-    </div>
+    </div> 
 
     <!-- <--------------suresh raiger section---------->
-        <div class="PhotoGallery">
+        <div class="PhotoGallery" id="PhotoGallery">
         <h1>Photos Gallery</h1>
         <div class="carimg">
 
