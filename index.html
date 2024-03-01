@@ -163,7 +163,7 @@
       @media screen and (min-width: 10px) and (max-width: 420px) {
         .marq {
           animation-duration: 5s;
-          margin-top: 60px;
+          margin-top: 70px;
           font-size: 18px;
           font-weight: 700;
         }
@@ -420,7 +420,7 @@ width: 99%;
        cursor: pointer;
 
        }
-       @media screen and (min-width:200px) and (max-width:420px) {
+       @media screen and (min-width:200px) and (max-width:767px) {
         .carimg{
          margin: auto;
         display: flex;
@@ -430,7 +430,7 @@ width: 99%;
        }
 
     }
-       @media screen and (min-width:421px) and (max-width:768px) {
+       @media screen and (min-width:768px) and (max-width:1020px) {
         .carimg{
          margin: auto;
         display: grid;
@@ -443,9 +443,195 @@ width: 99%;
         }
     }
 
-    /* -----------------------Koli ji------------------------- */
+   
+/* <-----------vikas ji csss-----------> */
 
-    .one {
+
+
+
+        .contact_us_section {
+            /* border: 2px solid blue; */
+            width: 96%;
+            margin: auto;
+            gap:40px;
+            display: flex;
+            justify-content: space-between;
+            margin: 20px auto;
+
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #808080;
+        }
+
+        form {
+            color: #1A202C;
+            font-size: 16px;
+            /* padding: 16px 0; */
+
+        }
+
+        .contact_us_form {
+            /* border: 2px solid grey; */
+            width: 40%;
+            padding: 40px;
+
+        }
+
+        .contact_us_img {
+            /* border: 2px solid lawngreen; */
+            width: 60%;
+            text-align: center;
+            margin: 50px auto;
+            padding: 10px;
+            overflow: hidden;
+
+        }
+
+        .contact_us_img img {
+
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: rgba(227, 220, 220, 0.81) 0px 5px 15px;
+            transition: all ease-in-out 1s;
+
+        }
+
+        .contact_us_img img:hover {
+            transform: scale(1.06);
+
+        }
+
+
+        .contact_us_form  label {
+            color: #808080;
+            font-weight: 600;
+
+        }
+
+       .contact_us_form input {
+            background-color: #ffffff;
+            width: 85%;
+            /* height: 40px; */
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #474343;
+            margin: 10px 0px;
+            font-family: sans-serif;
+            font-weight: 600;
+            opacity: 50%;
+
+
+        }
+
+
+        textarea {
+            width: 85%;
+            margin: 10px 0px;
+            border-radius: 5px;
+            /* padding: 10px; */
+            /* padding: 10px 70px 10px 10px; */
+            padding: 10px;
+            font-weight: 600;
+            font-family: sans-serif;
+            color: #808080;
+            opacity: 50%;
+
+
+        }
+
+        .contact_us_form button {
+            color: #ffffff;
+            background-color: #0080ff;
+            background-image: linear-gradient(#64a1e6, #9097e4);
+            margin: 10px auto;
+            padding: 10px;
+            width: 25%;
+            font-weight: bold;
+            font-size: large;
+            border-radius: 5px;
+
+        }
+
+        .contact_us_form button:hover {
+            background: #ffffff;
+            color: #0080ff;
+            border-radius: 5px;
+        }
+
+        .contact_us_form button:active {
+            box-shadow: 2px 2px 5px #020934;
+
+
+        }
+
+
+        /* .........media query for mobile..........  */
+
+        @media screen and (min-width: 220px)and (max-width: 900px) {
+            .contact_us_section {
+                /* border: 2px solid blue; */
+                display: block;
+                width: 100%;
+                margin: 20px auto;
+
+            }
+
+            h2 {
+                text-align: center;
+            }
+
+            .contact_us_form {
+                /* border: 2px solid grey;             */
+                padding: 10px;
+                width: 100%;
+                margin: 10px auto;
+
+            }
+
+            .contact_us_img {
+                /* border: 2px solid lawngreen; */
+                width: 100%;
+                margin: auto;
+                overflow: hidden;
+                padding: 0px;
+            }
+
+            /* .contact_us_img img{
+                width:100%;
+                padding: 0;
+
+            }  */
+
+            .contact_us_form  input {
+                background-color: #ffffff;
+                width: 92%;
+            
+                margin: 10px 0px;
+
+            }
+
+            textarea {
+                width: 92%;
+
+
+
+            }
+
+            .btn {
+                text-align: center;
+
+            }
+
+            .contact_us_form  button {
+                width: 40%;
+                padding: 15px;
+            }
+        }
+ /* -----------------------Koli ji------------------------- */
+
+ .one {
             /* border: 1px solid red; */
             width: 20%;
             height: 210px;
@@ -506,19 +692,19 @@ width: 99%;
         }
 
         button img {
-            width: 50%;
+            width: 40%;
         }
 
        footer button {
             width: 20%;
-            height: 90%;
+            height: 100%;
             border-radius: 5px;
             border: none;
             background-color: aliceblue;
         }
 
-        input {
-            height: 90%;
+       footer input {
+            height: 100%;
             border-radius: 5px;
             width: 50%;
             border: none;
@@ -551,6 +737,7 @@ width: 99%;
 
         .four h3 {
             color: rgb(66, 61, 61);
+            text-align: left;
         }
 
         @media screen and (min-width:50px) and (max-width:750px) {
@@ -574,6 +761,11 @@ width: 99%;
         .three,
         .four {
             text-align: left;
+        }
+        .two h3,
+        .three h3,
+        .four h3 {
+            text-align: center;
         }
 
         .mail {
@@ -611,6 +803,9 @@ width: 99%;
         .four {
             text-align: left;
         }
+        .four h3{
+          text-align: center;
+        }
         .two,
         .three
          {
@@ -622,197 +817,14 @@ width: 99%;
            margin-left:120px ;
         } }
 
-/* <-----------vikas ji csss-----------> */
 
+        /* ......... media query for tablet ...........  */
 
-
-
-        .contact_us_section {
-            border: 2px solid blue;
-            width: 90%;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-            margin: 20px auto;
-
-        }
-
-        h2 {
-            font-size: 24px;
-            color: #808080;
-        }
-
-        form {
-            color: #1A202C;
-            font-size: 16px;
-            /* padding: 16px 0; */
-
-        }
-
-        .contact_us_form {
-            /* border: 2px solid grey; */
-            width: 50%;
-            padding: 40px;
-
-        }
-
-        .contact_us_img {
-            /* border: 2px solid lawngreen; */
-            width: 40%;
-            text-align: center;
-            margin: 100px auto;
-            padding: 20px;
-            overflow: hidden;
-
-        }
-
-        .contact_us_img img {
-
-            width: 100%;
-            border-radius: 5px;
-            box-shadow: rgba(227, 220, 220, 0.81) 0px 5px 15px;
-            transition: all ease-in-out 1s;
-
-        }
-
-        .contact_us_img img:hover {
-            transform: scale(1.06);
-
-        }
-
-
-        label {
-            color: #808080;
-            font-weight: 600;
-
-        }
-
-        input {
-            background-color: #ffffff;
-            width: 60%;
-            /* height: 40px; */
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #474343;
-            margin: 10px 0px;
-            font-family: sans-serif;
-            font-weight: 600;
-            opacity: 50%;
-
-
-        }
-
-
-        textarea {
-            width: 60%;
-            margin: 10px 0px;
-            border-radius: 5px;
-            /* padding: 10px; */
-            /* padding: 10px 70px 10px 10px; */
-            padding: 10px;
-            font-weight: 600;
-            font-family: sans-serif;
-            color: #808080;
-            opacity: 50%;
-
-
-        }
-
-        button {
-            color: #ffffff;
-            background-color: #0080ff;
-            background-image: linear-gradient(#64a1e6, #9097e4);
-            margin: 10px auto;
-            padding: 10px;
-            width: 25%;
-            font-weight: bold;
-            font-size: large;
-            border-radius: 5px;
-
-        }
-
-        button:hover {
-            background: #ffffff;
-            color: #0080ff;
-            border-radius: 5px;
-        }
-
-        button:active {
-            box-shadow: 2px 2px 5px #020934;
-
-
-        }
-
-
-        /* .........media query for mobile..........  */
-
-        @media screen and (min-width: 220px)and (max-width: 420px) {
+        @media screen and (min-width: 751px)and (max-width: 1020px) {
             .contact_us_section {
                 /* border: 2px solid blue; */
                 display: block;
                 width: 100%;
-                margin: 20px auto;
-
-            }
-
-            h2 {
-                text-align: center;
-            }
-
-            .contact_us_form {
-                /* border: 2px solid grey;             */
-                padding: 10px;
-                width: 90%;
-                margin: 10px auto;
-
-            }
-
-            .contact_us_img {
-                /* border: 2px solid lawngreen; */
-                width: 90%;
-                margin: auto;
-                overflow: hidden;
-                padding: 0px;
-            }
-
-            /* .contact_us_img img {
-
-                width: 77%;
-
-            } */
-
-            input {
-                background-color: #ffffff;
-                width: 77%;
-                margin: 10px 0px;
-
-            }
-
-            textarea {
-                width: 77%;
-
-
-
-            }
-
-            .btn {
-                text-align: center;
-
-            }
-
-            button {
-                width: 40%;
-                padding: 15px;
-            }
-        }
-
-
-        /* ......... media query for tablet ...........  */
-
-        @media screen and (min-width: 421px)and (max-width: 768px) {
-            .contact_us_section {
-                /* border: 2px solid blue; */
-                display: block;
                 /* margin: 20px auto;          */
 
             }
@@ -832,25 +844,26 @@ width: 99%;
 
             .contact_us_img {
                 /* border: 2px solid lawngreen; */
-                width: 80%;
+                width: 98%;
                 margin: auto;
+                text-align: center;
                 /* overflow: hidden; */
                 /* padding: 0px; */
             }
 
-            /* .contact_us_img img {
-                width: 90%;
-            } */
+            .contact_us_img img {
+                width: 80%;
+            }
 
-            input {
+            .contact_us_form  input {
                 /* background-color: #ffffff; */
-                width: 90%;
+                width: 100%;
 
 
             }
 
-            textarea {
-                width: 90%;
+            .contact_us_form  textarea {
+                width: 100%;
 
 
 
@@ -861,7 +874,7 @@ width: 99%;
 
             }
 
-            button {
+            .btn button {
                 width: 40%;
                 padding: 15px;
             }
@@ -880,14 +893,14 @@ width: 99%;
           <li><a href="#section">View Adds</a></li>
           <li><a href="./login.html">Create Add</a></li>
           <li><a href="#PhotoGallery">Gallery</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#footer">Contact</a></li>
         </ul>
       </div>
       <div class="div_avtar">
         <img src="./Images/Avatar.png" alt="" />
         <div class="dropdown-content">
           <a href="./login.html">Log in</a>
-          <a href="#">Register Here </a>
+          <a href="./registration.html">Register Here </a>
         </div>
       </div>
       <div class="menu_bar">
@@ -897,7 +910,7 @@ width: 99%;
           <a href="#section">View Adds </a>
           <a href="./login.html">Create Add</a>
           <a href="#PhotoGallery">Gallery</a>
-          <a href="#">Contact</a>
+          <a href="#footer">Contact</a>
         </div>
       </div>
     </nav>
@@ -1053,5 +1066,97 @@ width: 99%;
                  <div id="nineimage"><img src="./Images/sports.jpg"></div>
         </div>
     </div>
+
+    <!-- ----------------------------------------vikas ji---------------------------- -->
+    <div class="contact_us_section">
+      <div class="contact_us_img">
+          <img src="/teamA/Images/form.png" alt="contact us">
+      </div>
+
+
+      <div class="contact_us_form">
+          <h2>Contact Us</h2>
+          <form>
+              <div>
+                  <label for="name">Name-</label>
+                  <br>
+                  <input type="text" placeholder="Enter your Name" required>
+              </div>
+
+
+
+              <div>
+                  <label for="mobile">Mobile-</label>
+                  <br>
+                  <input type="text" placeholder="Enter your Mobile" required>
+
+              </div>
+
+              <div>
+                  <label for="email">Email-</label>
+                  <br>
+                  <input type="email" placeholder="Enter your Email here" required>
+              </div>
+
+              <div>
+                  <label for="">Query-</label>
+                  <br>
+                  <textarea name="text_area" cols="50" rows="7">Type your Query</textarea>
+              </div>
+
+          </form>
+
+          <div class="btn">
+              <button>Submit</button>
+          </div>
+      </div>
+
+  </div>
+
+
+    <!-- ------------------------------koli ji------------------------------------- -->
+    <footer  id="footer">
+
+      <div class="one">
+          <div class="first"><img src="..//teamA/Images/wol.png">
+              <h3>Ride Advertise</h3>
+          </div>
+
+          <p>2003 Ride Advertise. All rights reserved</p>
+          <div class="second"><img src="..//teamA/Images/twit.png">
+              <img src="..//teamA/Images/y.png">
+              <img src="..//teamA/Images/inst.jpg">
+          </div>
+
+      </div>
+      <div class="two">
+          <h3>Company</h3>
+          <ul>
+              <li>About us</li>
+              <li>Blog</li>
+              <li>Contact us</li>
+              <li>pricing</li>
+              <li>Testimonials</li>
+          </ul>
+      </div>
+      <div class="three">
+          <h3>Support</h3>
+          <ul>
+              <li>Help Center</li>
+              <li>Terms of Service</li>
+              <li>Legal</li>
+              <li>privacy</li>
+              <li>Status</li>
+          </ul>
+      </div>
+      <div class="four">
+          <h3>Stay up to date</h3>
+          <div class="mail">
+              <input type="email" placeholder="your email adress">
+              <button><img src="../teamA/Images/gmail.png"></button>
+          </div>
+      </div>
+
+  </footer>
   </body>
 </html>
